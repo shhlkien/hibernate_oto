@@ -5,8 +5,8 @@
     <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
     <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
     <property name="connection.url">jdbc:mysql://localhost:3306/hibernate_oto</property>
-    <property name="connection.username">kien</property>
-    <property name="connection.password">snowwhite</property>
+    <property name="connection.username">username</property>
+    <property name="connection.password">password</property>
     <property name="show_sql">true</property>
     <property name="enable_lazy_load_no_trans">true</property>
     
