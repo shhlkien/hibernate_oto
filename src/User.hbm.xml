@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping SYSTEM "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="entity.User" table="user">
+    <id name="userId" type="int" column="id">
+      <generator class="native" />
+    </id>
+    <property name="name" type="string" column="name" />
+    <many-to-one name="address" column="address"
+      class="entity.Address" unique="true" not-null="true" />
+  </class>
+
+  <class name="entity.Address" table="address">
+    <id name="id" type="int" column="id">
+      <generator class="native" />
+    </id>
+    <property name="city" type="string" column="city" />
+    <property name="zipcode" type="int" column="zipcode" />
+  </class>
+</hibernate-mapping>
