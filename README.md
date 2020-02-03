@@ -16,7 +16,7 @@ One to one relationship in hibernate using XML config
 - Create database _hibernate_oto_ (name is optional):
   - Create table _address_:
   ```sql
-  CREATE TABLE user(
+  CREATE TABLE address(
     id INT PRIMARY KEY AUTO_INCREMENT,
     city VARCHAR(255) NOT NULL,
     zipcode INT NOT NULL
